@@ -214,7 +214,7 @@ $("#subscribeAsadsa").submit(function (e) {
 /* =================================
 ===  CONTACT FORM          ====
 =================================== */
-$("#contactSuccess").on("click", function(e){
+$("#contactSuccessAdsaads").on("click", function(e){
 	$('.success').fadeIn(1000);
 	$('.error').fadeOut(500);
     return false;
