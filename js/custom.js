@@ -214,7 +214,7 @@ $("#subscribeAsadsa").submit(function (e) {
 /* =================================
 ===  CONTACT FORM          ====
 =================================== */
-$("#contactAjaaa").submit(function (e) {
+$("#contactSuccess").submit(function (e) {
     e.preventDefault();
     var name = $("#name").val();
     var email = $("#email").val();
@@ -230,7 +230,7 @@ $("#contactAjaaa").submit(function (e) {
     if (isValidEmail(email) && (message.length > 1) && (name.length > 1)) {
         $.ajax({
             type: "POST",
-            url: "sendmail.php",
+            url: "https://formspree.io/hi.helphelp@gmail.com",
             data: dataString,
             success: function () {
                 $('.success').fadeIn(1000);
