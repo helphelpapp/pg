@@ -229,13 +229,8 @@ $("#contactSuccess").submit(function (e) {
 
     if (isValidEmail(email) && (message.length > 1) && (name.length > 1)) {
         $.ajax({
-            type: "POST",
-            url: "https://formspree.io/hi.helphelp@gmail.com",
-            data: dataString,
-            success: function () {
-                $('.success').fadeIn(1000);
-                $('.error').fadeOut(500);
-            }
+			$('.success').fadeIn(1000);
+			$('.error').fadeOut(500);
         });
     } else {
         $('.error').fadeIn(1000);
