@@ -214,11 +214,9 @@ $("#subscribeAsadsa").submit(function (e) {
 /* =================================
 ===  CONTACT FORM          ====
 =================================== */
-$("#contactSuccess").submit(function (e) {
-    $.ajax({
-			$('.success').fadeIn(1000);
-			$('.error').fadeOut(500);
-        });
+$("#contactSuccess").on("click", function(e){
+	$('.success').fadeIn(1000);
+	$('.error').fadeOut(500);
     return false;
 });
 
